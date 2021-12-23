@@ -13,7 +13,7 @@
           <h6>Rs 50</h6>
           <div class="my-3 line w-60"></div>
           <h6>Rs {{totalPrice + 50}}</h6>
-      </div>
+      </div> 
   </div>
 </template>
 

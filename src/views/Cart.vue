@@ -1,4 +1,4 @@
-<template>
+<template> 
 <div class="d-flex cart-outer-div">
     <Header />
     <div class="cart-body">

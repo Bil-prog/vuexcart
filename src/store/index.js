@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import cake1 from '../assets/cake1.jpg'
-import cake2 from '../assets/cake2.jpg'
-import cake3 from '../assets/cake3.jpg'
+import cake1 from '../assets/cakes/cake1.jpg'
+import cake2 from '../assets/cakes/cake2.jpg'
+import c3 from '../assets/cakes/c3.jpg'
+import c4 from '../assets/cakes/c4.jpg'
+import c5 from '../assets/cakes/c5.jpg'
+import c6 from '../assets/cakes/c6.jpg'
 
 import cake4 from '../assets/cake4.jpg'
 import cake5 from '../assets/cake5.jpg'
@@ -17,10 +20,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    topRated: [
-      {id: 1, name: 'Cake1', price: 100, url: cake1, desc: "Tasty", rate: 4.1},
-      {id: 2, name: 'Cake2', price: 150, url: cake2, desc: "Tasty", rate: 4.1},
-      {id: 3, name: 'Cake3', price: 200, url: cake3, desc: "Tasty", rate: 4.1}
+    cakes: [
+      {id: 1, name: 'Chocolate cake', price: 100, url: cake1, desc: "Tasty", rate: 4.1},
+      {id: 2, name: 'Bubblegum cake', price: 150, url: cake2, desc: "Tasty", rate: 4.1},
+      {id: 3, name: 'Lemon & mint cake', price: 200, url: c3, desc: "Tasty", rate: 4.1},
+      {id: 4, name: 'Strawberry cake', price: 200, url: c4, desc: "Tasty", rate: 4.1},
+      {id: 5, name: 'Caramel cake', price: 200, url: c5, desc: "Tasty", rate: 4.1},
+      {id: 6, name: 'Orange cake', price: 200, url: c6, desc: "Tasty", rate: 4.1}
     ],
     allCategories: [
       {id: 4, name: 'Cake4', price: 100, url: cake4, desc: "Tasty", rate: 4.1},

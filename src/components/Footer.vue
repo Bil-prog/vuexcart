@@ -2,20 +2,12 @@
 <footer>
     <div class="footer">
         <div style="margin-left: 20px;">
-            <h4 class="fw-600">Sweet Dish</h4>
+            <h4 class="fw-600">Sweet Tooth</h4>
         </div>
         <div class="about-us">
             <div>
-                <h5 class="fw-600">About Us</h5>
-            </div>
-            <div>
-                <h5 class="fw-600">T & C</h5>
-            </div>
-            <div>
-                <h5 class="fw-600">Privacy Policy</h5>
-            </div>
-            <div>
-                <h5 class="fw-600">Contact Us</h5>
+                <router-link class="link" :to="{ name: 'About' }">About Us</router-link> |
+                <router-link class="link" :to="{ name: 'Contact' }">Contact Us</router-link>
             </div>
         </div>
     </div>
@@ -31,7 +23,7 @@ export default {
 <style scoped>
 .footer{
     min-height: 60px;
-    background: lightgray;
+    background: #B6E5D8;
     display: flex;
     justify-content: space-between;
     padding-top: 17px;
@@ -41,6 +33,14 @@ export default {
     width: 500px;
     justify-content: space-evenly;
 }
+.link{
+    font-weight: 500;
+    padding: 0 8px;
+    transition: 0.3s color ease;
+ }  
+ .link:hover{
+    color: deeppink; 
+ }
 .fw-600{
     font-weight: 600;
 }

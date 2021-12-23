@@ -1,14 +1,14 @@
 <template>
   <div class="wrapper">
     <Header />
-    <div class="content">
+    <div class="content"> 
       <div class="container mb-5">
 
-        <h4 class="my-4 fw-600 d-blue">Top Rated</h4>
+        <h4 class="my-4 fw-600 d-blue">Cakes</h4>
         <div class="row">
               <div
                   v-on:click="foodDeets(items)" 
-                  v-for="items in topRated" 
+                  v-for="items in cakes" 
                   :key="items.id" 
                   class="col-md-4 pointer">
                 <img :src="items.url" width="300px" height="300px" style="border-radius: 15px;">
@@ -67,8 +67,8 @@ export default {
   },
 
   computed: {
-    topRated(){
-      return this.$store.state.topRated;
+    cakes(){
+      return this.$store.state.cakes;
     },
     allCategories(){
       return this.$store.state.allCategories;
